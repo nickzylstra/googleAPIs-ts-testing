@@ -15,7 +15,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "googleapis": "^51.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^25.2.2",
     "@typescript-eslint/eslint-plugin": "^2.33.0",

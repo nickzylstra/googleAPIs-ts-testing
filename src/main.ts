@@ -1,10 +1,11 @@
-import { hello, user } from './hello';
-
+import drive from './drive';
 
 (async function main() {
-  hello(user);
+  const client = await drive.getClient();
+  await drive.listFiles(client);
+
 
   setTimeout(() => {
     main();
-  }, 5000);
-}());
+  }, 30000);
+}()).catch((e) => console.log(e.stack));
